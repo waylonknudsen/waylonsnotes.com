@@ -75,7 +75,27 @@
         </nav>
     </header>
     <center>
-        <h1>Welcome to Waylonsnotes.com</h1>
+        <p>You ride your bike to a store 4mi away. <br>
+         When there's no wind you bike about 10 mph. <br>
+          it took you 1 hr to ride to the store and back. <br>
+           what was the wind speed.  <br>
+           d = rt; <br> 
+           t = d/r; <br>
+          
+           4/10+x + 4/10-x <br>
+
+           <ol>
+               <li>x=-10,10</li> <br>
+               <li>(10+x)(10-x)</li> <br>
+               4(10-x) + 4(10+x) = 100-x<sup>2</sup><br>
+               <?php
+               echo '<p>square root of 20</p>' . sqrt(20) . '<br>';
+               echo '<p>square root of 425</p>' . sqrt(425) . '<br>';
+               ?>
+               
+
+           </ol>
+    </p>
     </center>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
