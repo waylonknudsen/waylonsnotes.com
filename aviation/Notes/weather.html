@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+<header>
         <nav class="navbar navbar-expand-lg navbar-light bg-primary">
             <a class="navbar-brand" href="index.html">Waylon's Notes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -75,51 +75,52 @@
         </nav>
     </header>
     <center>
-        <h1>Aviation Notes</h1>
-        <a href="weather.html"></a>
+        <ul>
+            <li></li>
+        </ul>
     </center>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-        <script>
-                
-                /***********************************************
-                * Refresh page Script- (c) Dynamic Drive (http://www.dynamicdrive.com)
-                * Please keep this notice intact
-                * Visit http://www.dynamicdrive.com/ for this script and 100s more.
-                ***********************************************/
-                
-                function refreshpage(interval, countdownel, totalel){
-                    var countdownel = document.getElementById(countdownel)
-                    var totalel = document.getElementById(totalel)
-                    var timeleft = interval+1
-                    var countdowntimer
-                
-                    function countdown(){
-                        timeleft--
-                        countdownel.innerHTML = timeleft
-                        if (timeleft == 0){
-                            clearTimeout(countdowntimer)
-                            window.location.reload()
-                        }
-                        countdowntimer = setTimeout(function(){
-                            countdown()
-                        }, 1000)
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+    <script>
+            
+            /***********************************************
+            * Refresh page Script- (c) Dynamic Drive (http://www.dynamicdrive.com)
+            * Please keep this notice intact
+            * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+            ***********************************************/
+            
+            function refreshpage(interval, countdownel, totalel){
+                var countdownel = document.getElementById(countdownel)
+                var totalel = document.getElementById(totalel)
+                var timeleft = interval+1
+                var countdowntimer
+            
+                function countdown(){
+                    timeleft--
+                    countdownel.innerHTML = timeleft
+                    if (timeleft == 0){
+                        clearTimeout(countdowntimer)
+                        window.location.reload()
                     }
-                
-                    countdown()
+                    countdowntimer = setTimeout(function(){
+                        countdown()
+                    }, 1000)
                 }
-                
-                window.onload = function(){
-                    refreshpage(60, "countdown") // refreshpage(duration_in_seconds, id_of_element_to_show_result)
-                }
-                
-                </script>
-                
-                <div>Next <a href="javascript:window.location.reload()">refresh</a> in <b id="countdown"></b> seconds</div>
+            
+                countdown()
+            }
+            
+            window.onload = function(){
+                refreshpage(60, "countdown") // refreshpage(duration_in_seconds, id_of_element_to_show_result)
+            }
+            
+            </script>
+            
+            <div>Next <a href="javascript:window.location.reload()">refresh</a> in <b id="countdown"></b> seconds</div>
 </body>
 <footer>
 
